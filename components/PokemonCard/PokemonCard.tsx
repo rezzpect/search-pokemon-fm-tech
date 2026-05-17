@@ -13,7 +13,7 @@ import PokemonAttack from "../PokemonAttack/PokemonAttack";
 const views = ["Stats", "Evolutions", "Attacks"];
 
 export default function PokemonCard() {
-    const [view, setView] = useState<string>("stats");
+    const [view, setView] = useState<string>("Stats");
     const searchParams = useSearchParams();
     const search = searchParams.get("name") || '';
 

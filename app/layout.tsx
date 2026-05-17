@@ -28,7 +28,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-screen w-full border-8 border-green-500">
+      <body className="min-h-screen w-full">
         <ApolloWrapper>
           {children}
         </ApolloWrapper>
