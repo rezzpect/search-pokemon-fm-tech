@@ -10,13 +10,13 @@ import DisplayError from "@/components/Error/DisplayError";
 export default function Home() {
   return (
     <div className="w-full p-10 flex flex-col justify-center items-center gap-5">
-      <div className="w-150">
+      <div className="md:w-150 w-[80vw]" >
         <Suspense>
           <SearchInput />
         </Suspense>
       </div>
 
-      <div className='w-200 h-full'>
+      <div className='md:w-200 w-screen h-full'>
         <ErrorBoundary errorComponent={DisplayError}>
           <Suspense fallback={<Loading />}>
             <PokemonCard />

@@ -8,7 +8,7 @@ export default function PokemonEvolution({ pokemon }: { pokemon: POKEMON | null}
     }
 
     return (
-        <div className="w-full grid grid-cols-3 gap-2 p-5">
+        <div className="w-full grid md:grid-cols-3 grid-cols-2 gap-2 p-5">
             {
                 pokemon.evolutions && pokemon.evolutions.map((evo: { name: string, image: string }, index: number) => (
                     <Link href={`/?name=${evo.name}`} key={`evo-${index}`} className="flex flex-col rounded-lg p-2 items-center gap-2 hover:text-green-500 hover:shadow-sm">
