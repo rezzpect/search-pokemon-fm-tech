@@ -21,7 +21,7 @@ export default function PokemonStat({ pokemon }: { pokemon: POKEMON | null }) {
 
                 <div className="flex flex-col">
                     <header className="text-lg font-bold">Resistant</header>
-                    <div className="flex gap-2 mt-2">
+                    <div className="flex gap-2 mt-2 flex-wrap">
                         {pokemon.resistant.map((res: string, index: number) => (
                             <span key={`res-${index}`} className="px-2 rounded-full w-fit h-fit text-white bg-green-800">{res}</span>
                         ))}
@@ -30,7 +30,7 @@ export default function PokemonStat({ pokemon }: { pokemon: POKEMON | null }) {
 
                 <div className="flex flex-col">
                     <header className="text-lg font-bold">Weaknesses</header>
-                    <div className="flex gap-2 mt-2">
+                    <div className="flex gap-2 mt-2 flex-wrap">
                         {pokemon.weaknesses.map((weak: string, index: number) => (
                             <span key={`weak-${index}`} className="px-2 rounded-full w-fit h-fit text-white bg-red-800">{weak}</span>
                         ))}
